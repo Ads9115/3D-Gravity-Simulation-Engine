@@ -68,7 +68,7 @@ int main() {
         lastFrame = currentFrame;
 
         camera.ProcessKeyboard(window, deltaTime);
-        simulation.Update();
+        simulation.Update(deltaTime);
 
         shader.use();
         glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 150000.0f);

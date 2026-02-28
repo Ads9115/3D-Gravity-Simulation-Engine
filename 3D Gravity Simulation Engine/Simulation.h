@@ -10,7 +10,7 @@ public:
     bool pause;
 
     Simulation();
-    void Update();
+    void Update(float deltaTime);
     void AddObject(const Object& obj);
 };
 #endif
